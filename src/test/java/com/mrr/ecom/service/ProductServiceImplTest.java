@@ -28,17 +28,6 @@ public class ProductServiceImplTest {
     ProductServiceImpl productService;
   //  private static Product product = null;
 
-/*    @BeforeAll
-    public static void init() {
-        product = new Product(
-                1L,
-                "jacket",
-                "Black jacket to style with tshirt",
-                new BigDecimal("9000.00"),
-
-                20, Category.FASHION.name()
-        );
-    }*/
 
     @Test
     void saveProductShouldAddProductSuccessfully() {
