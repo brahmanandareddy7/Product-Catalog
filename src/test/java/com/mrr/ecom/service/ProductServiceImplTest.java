@@ -59,7 +59,7 @@ public class ProductServiceImplTest {
                 20, Category.FASHION.name()
         );
         Mockito.when(productRepo.save(product)).thenReturn(product);
-        String addeddproduct=productService.saveProduct(productRequest);
+        String addeddproduct=productService.saveProduct(product);
         Assertions.assertEquals(1,product.getId());
         Assertions.assertEquals("Product added successfully",addeddproduct);
     }
